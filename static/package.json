@@ -1,0 +1,19 @@
+{
+  "name": "ztp-ui",
+  "description": "ztp-ui",
+  "version": "0.0.1",
+  "devDependencies": {
+    "browser-sync": "2.24.7",
+    "del": "3.0.0",
+    "git-rev": "0.2.1",
+    "gulp": "3.9.1",
+    "gulp-angular-templatecache": "2.2.1",
+    "gulp-rename": "1.4.0",
+    "gulp-replace": "1.0.0",
+    "gulp-requirejs": "1.1.1",
+    "q": "1.5.1",
+    "underscore": "1.9.1",
+    "gulp-footer": "2.0.1",
+    "gulp-template": "5.0.0"
+  }
+}

@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>M&K Boats</title>
+  <link rel="stylesheet" href="css/dots.css">
+  <link rel="stylesheet" href="css/ui-grid.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/toastr.css">
+
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+  <link href="css/pygments.css" rel="stylesheet">
+
+  <script type="text/javascript" src="lib/jquery.min.js"></script>
+  <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+  <script type="text/javascript" src="lib/papaparse.min.js"></script>
+  <script type="text/javascript" src="lib/underscore-min.js"></script>
+  <script type="text/javascript" src="lib/toastr.js"></script>
+  <script type="text/javascript" src="app/config.js"></script>
+
+  <script src="lib/require.js"></script>
+  <script src="app/main.js"></script>
+
+  <script>
+      require.config(require_config);
+  </script>
+
+</head>
+<body>
+
+<div id="wrapper">
+
+
+    {% raw %}
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <div class="sidebar-nav">
+        <li class="sidebar-brand"><a href="#">M&K Boats</a></li>
+        <li>
+          <a 
+            href="#" 
+            ui-sref="{{tab.route}}"
+            ui-sref-active="is-active"
+            ng-repeat="tab in $root.tabs">{{tab.displayName}}
+          </a>
+        </li>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+    {% endraw %}
+
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+        </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div id="page-content-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div ui-view></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<div>
+    <li
+        ng-repeat="listing in listings"
+    >{{ listing._source.boat}} <br><br><br>
+    <p ng-bind-html="listing._source.source | sce"></p>
+    </li>
+</div>

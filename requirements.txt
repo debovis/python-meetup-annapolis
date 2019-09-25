@@ -1,0 +1,5 @@
+requests
+pattern
+ghost
+elasticsearch
+google-api-python-client

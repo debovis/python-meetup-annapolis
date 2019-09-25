@@ -15,8 +15,8 @@ import spacy
 nlp = spacy.load('en')
 
 
-API_KEY = "AIzaSyBRkx-qv6vP9m5oAvZU-PDj6OqJuSGFQPU"
-CX = '008718552203017823683:wbbhaz5fgu6'
+API_KEY = ""
+CX = ''
 
 boats = [
     "Aloha 30",
@@ -307,10 +307,4 @@ def get_craigslist_postings():
             res = es.index(**post_data)
 
 get()
-
-
-
-
-
-
 
